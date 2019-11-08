@@ -50,8 +50,8 @@ class App extends Component {
 				<h1>SpaceX Launches</h1>
 				<Container className={"p-0"}>
 					<Row id="filters" className={"no-gutters py-3 border border-bottom-0 rounded-top"}>
-						<Col className={"pl-4"}><button className={"refresh btn btn-link"} href="#" onClick={(event) => this.handleRefresh(event)}><img src={refreshIcon} className={"border border-custom rounded-circle"} alt={"refresh"} height={"32px"} width={"32px"} /></button></Col>
-						<Col className={"col-8 text-right my-auto"}>
+						<Col className={"pl-4 my-auto"}><button className={"refresh btn btn-link"} href="#" onClick={(event) => this.handleRefresh(event)}><img src={refreshIcon} className={"border border-custom rounded-circle"} alt={"refresh"} height={"32px"} width={"32px"} /></button></Col>
+						<Col className={"col-8 checkboxes my-auto"}>
 							<div className={"form-check form-check-inline"}>
 								<input className={"form-check-input checkbox"} type="checkbox" id="success" name="success" checked={this.state.success} onChange={this.handleChange} />
 								<label className={"form-check-label"} htmlFor="success">Land Success</label>
@@ -66,7 +66,7 @@ class App extends Component {
 							</div>
 						</Col>
 					</Row>
-					<Table className={"table-borderless flights"}>
+					<Table className={"table-borderless table-responsive flights"}>
 						<thead>
 							<tr>
 								<th className={"text-center"}>Badge</th>

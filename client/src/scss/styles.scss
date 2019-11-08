@@ -14,18 +14,26 @@ body {
   color: #fff;
 }
 
+.page-wrapper {
+  padding: 1rem;
+}
+
 h1 {
   text-align: center;
   font-size: 4rem;
   padding-bottom: 2rem;
 }
 
-.page-wrapper {
-  padding: 3rem 6rem;
-}
-
 #filters {
   opacity: 0.7;
+}
+
+.form-check-inline {
+  margin-left: 4rem;
+}
+
+.checkboxes {
+ padding-left: 50px;
 }
 
 .border-custom {
@@ -83,3 +91,28 @@ input.checkbox:checked {
   border-bottom-right-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
 }
+
+@media (min-width: 992px) {
+  .page-wrapper {
+    padding: 3rem 6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-wrapper {
+    padding: 3rem 6rem;
+  }
+
+  .checkboxes {
+    text-align: right;
+  }
+
+  .table {
+    display: table;
+  }
+
+  .form-check-inline {
+    margin-left: 0;
+  }
+}
+
