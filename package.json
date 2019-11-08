@@ -1,0 +1,22 @@
+{
+  "name": "robots-and-pencils-assessment",
+  "version": "1.0.0",
+  "description": "Robots and Pencils Assessment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "author": "Sang Huynh",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.7.8"
+  },
+  "engines": {
+    "node": "10.5.0"
+  }
+}
